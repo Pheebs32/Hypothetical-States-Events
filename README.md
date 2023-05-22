@@ -57,22 +57,25 @@
 <br>Transition: Redirects to the Login Page.
 
 **State Transition Table:**
-<br><img src-"Screenshot 2023-05-22 at 11.58.30.png">
+<br><br> ![](Screenshot%202023-05-22%20at%2012.38.04.png)
 
-| State         | Event                             | Next State    |
-|---------------|-----------------------------------|---------------|
-| Sign-up Page  | User fills out sign-up form       | Login Page    |
-| Login Page    | User enters username and password | Home Page     |
-| Home Page     | User clicks on the Profile link   | Profile Page  |
-| Home Page     | User clicks on settings link      | Settings Page |
-| Profile Page  | User clicks on the Home link      | Home Page     |
-| Profile Page  | User updates profile information  | Profile Page  |
-| Profile Page  | User clicks on settings link      | Settings Page |
-| Settings Page | User clicks on Profile link       | Profile Page  |
-| Settings Page | User clicks on Home link          | Home Page     |
-| Settings Page | User logs out                     | Login Page    |
-| Profile Page  | User logs out                     | Login Page    |
-| Home Page     | User logs out                     | Login Page    |
+| State         | Event                                       | Next State    |
+|---------------|---------------------------------------------|---------------|
+| Sign-up Page  | User fills out sign-up form                 | Login Page    |
+| Login Page    | User enters username and password           | Home Page     |
+| Home Page     | User clicks on the Profile link             | Profile Page  |
+| Home Page     | User clicks on settings link                | Settings Page |
+| Profile Page  | User clicks on the Home link                | Home Page     |
+| Profile Page  | User updates profile information            | Profile Page  |
+| Profile Page  | User clicks on settings link                | Settings Page |
+| Settings Page | User clicks on Profile link                 | Profile Page  |
+| Settings Page | User clicks on Home link                    | Home Page     |
+| Settings Page | User logs out                               | Login Page    |
+| Profile Page  | User logs out                               | Login Page    |
+| Home Page     | User logs out                               | Login Page    |
+| Sign-up Page  | User fills out sign-up form (invalid)       | Sign-up Page  |
+| Login Page    | User enters username and password (invalid) | Login Page    |
+
 
 #### **Hypothetical Test Case:**
 **Starting State: Sign-up Page**
@@ -92,3 +95,13 @@
 <br>Verify if the transition occurs to the Settings Page.
 <br>Click on the "Log Out" link to log out.
 <br>Verify if the transition occurs to the Login Page.
+
+**Test Steps:**
+<br>Fill out the sign-up form with invalid information.
+<br>Click "Submit" to attempt sign-up.
+<br>Verify that no transition occurs from sign-up page.
+
+**Test Steps:**
+<br>Enter invalid login credentials on the Login Page.
+<br>Click "Login" to attempt login.
+<br>Verify that no transition occurs from login page.
