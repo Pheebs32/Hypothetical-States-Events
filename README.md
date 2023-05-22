@@ -57,8 +57,7 @@
 <br>Transition: Redirects to the Login Page.
 
 **State Transition Table:**
-<br>![Screenshot 2023-05-22 at 11.58.30.png](..%2F..%2FDesktop%2FScreenshot%202023-05-22%20at%2011.58.30.png)
-<br>[Alt text](Screenshot 2023-05-22 at 11.58.30.png)
+<br><img src-"Screenshot 2023-05-22 at 11.58.30.png">
 
 | State         | Event                             | Next State    |
 |---------------|-----------------------------------|---------------|
