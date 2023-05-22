@@ -57,7 +57,6 @@
 <br>Transition: Redirects to the Login Page.
 
 **State Transition Table:**
-<<<<<<< HEAD
 <br><br> ![](Screenshot%202023-05-22%20at%2012.38.04.png)
 
 | State         | Event                                       | Next State    |
@@ -76,10 +75,6 @@
 | Home Page     | User logs out                               | Login Page    |
 | Sign-up Page  | User fills out sign-up form (invalid)       | Sign-up Page  |
 | Login Page    | User enters username and password (invalid) | Login Page    |
-=======
-<br> ![](Screenshot%202023-05-22%20at%2011.58.30.png)
->>>>>>> fe660c22b99beb06ee6dabef47f2a0ffdcddcb22
-
 
 #### **Hypothetical Test Case:**
 **Starting State: Sign-up Page**
